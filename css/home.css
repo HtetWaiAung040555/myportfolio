@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    font-family: 'Playfair Display';
+}
+
+.text-aliceblue {
+    color: aliceblue;
+}
+
+.text-darkcyan {
+    color: darkcyan;
+}
+
+.text-deeppink {
+    color: deeppink !important;
+}
+
+.text-royalblue{
+    color: royalblue;
+}
+
+.text-navy {
+    color: navy;
+}
+
+.bg-darkcyan {
+    background-color: darkcyan;
+}
+
+.bg-aliceblue {
+    background-color: aliceblue;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #151530;
+    color: aliceblue;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px 10px;
+    background-color: #151540;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+#sidebar ul li a:hover {
+    color: darkcyan;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#sidebar ul li a:focus {
+    color: darkcyan;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.siderbar-box{
+    width: 130px;
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid darkgray;
+
+}
+
+.logo-font {
+    color: aliceblue;
+    font-family: 'Norican';
+}
+
+#content {
+    width: calc(100% - 250px);
+    padding: 20px;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #151520;
+}
+
+.introduction{
+    font-family: 'Rozha One';
+    font-size: 2.5rem;
+}
+
+.intro-font{
+    color: bisque;
+    font-family: 'Lobster';
+}
+
+#homeSection button {
+    padding: 20px 30px;
+    background-color: #000;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: relative;
+    transition: 500ms;
+}
+
+#homeSection button span {
+    color: darkcyan;
+    position: relative;
+    transition: 500ms;
+    transition-delay: 100ms;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#homeSection button div {
+    transition: 500ms;
+    position: absolute;
+    background-color: bisque;
+}
+
+#homeSection button .top {
+    width: 25px;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+
+#homeSection button .bottom {
+    width: 25px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+}
+
+#homeSection button .left {
+    width: 2px;
+    height: 25px;
+    top: 0;
+    left: 0;
+}
+
+#homeSection button .right {
+    width: 2px;
+    height: 25px;
+    bottom: 0;
+    right: 0;
+}
+
+#homeSection button:hover span{
+    color: aliceblue;
+}
+
+#homeSection button:hover .top,
+#homeSection button:hover .bottom {
+    width: 100%;
+}
+
+#homeSection button:hover .left,
+#homeSection button:hover .right {
+    height: 100%;
+}
+
+.profile{
+    width: 300px;
+    height: 300px;
+}
+
+.profile-img{
+    border: 5px solid #e8e8e8;
+}
+
+.about-me {
+    border-left: 5px solid darkcyan;
+    font-size: 2.2rem;
+}
+
+.personal-info{
+    display: inline;
+    border-bottom: 3px solid darkcyan;
+}
+
+.btn-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 1.4rem;
+    color: darkcyan;
+    vertical-align: middle;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    transition: all 0.5s;
+}
+
+.btn-icon:hover {
+    color: aliceblue;
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+}
+
+.personal-card {
+    cursor: pointer;
+    width: auto;
+    height: 200px;
+    padding: 30px 0px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 7px 7px 20px rgb(25, 25, 25),
+                -7px -7px 20px rgb(60, 60, 60);
+    transition: all 0.5s;
+}
+
+.personal-card:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.skill-card-text {
+    display: inline;
+    border-bottom: 2px solid darkcyan;
+}
+
+.cust-input-group {
+    position: relative;
+}
+
+.cust-input {
+    width: 100%;
+    border: solid 1.5px aliceblue;
+    border-radius: 0.5rem;
+    background: none;
+    padding: 0.6rem;
+    font-size: 1rem;
+    color: aliceblue;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.cust-label {
+    position: absolute;
+    left: 15px;
+    color: aliceblue;
+    pointer-events: none;
+    transform: translateY(0.6rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.cust-input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid royalblue;
+}
+
+.cust-input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.9);
+    background-color: #151520;
+    padding: 0 0.2em;
+    color: royalblue;
+}
+
+.cust-border {
+    border: 2px solid #151550;
+}
+
+.cust-btn {
+    font-size: 0.9rem;
+    background: darkcyan;
+    color: aliceblue;
+    padding: 0.6em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.cust-btn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.cust-btn i {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cust-btn:hover .cust-icon {
+    animation-name: flyIcon;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes flyIcon {
+    from {
+        transform: translateY(0.1em);
+    }
+    
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+.cust-btn:hover i {
+    transform: translateX(2.3em) rotate(45deg) scale(1.1);
+}
+
+.cust-btn:hover span{
+    transform: translateX(8em);
+}
+
+.cust-btn:active {
+    transform: scale(0.95);
+}
+
+.cust-card{
+    border-left: 5px solid darkcyan;
+    color: aliceblue;
+    background-color: black;
+    padding: 5px 10px;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cust-card::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.cust-icon-box{
+    display: flex;
+    padding: 3px 10px;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    color: darkcyan;
+    width: fit-content;
+    height: fit-content;
+    transition: all 0.3s ease-in-out;
+}
+
+.cust-icon-box::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    z-index: -1;
+
+}
+
+.cust-card:hover::before{
+    transform: translateX(0);
+}
+
+.cust-card:hover .cust-icon-box{
+    background-color: black;
+    color: darkcyan;
+}
