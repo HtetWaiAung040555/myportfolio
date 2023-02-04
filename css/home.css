@@ -17,11 +17,11 @@
 }
 
 .text-deeppink {
-    color: deeppink !important;
+    color: deeppink;
 }
 
 .text-royalblue{
-    color: royalblue !important;
+    color: royalblue;
 }
 
 .text-navy {
@@ -204,17 +204,53 @@
     border-radius: 50%;
     padding: 0;
     font-size: 1.4rem;
-    color: darkcyan;
     vertical-align: middle;
     background-color: aliceblue;
     border: 1px solid aliceblue;
+}
+
+.btn-facebook {
+    color: blue;
     transition: all 0.5s;
 }
 
-.btn-icon:hover {
+.btn-twitter {
+    color: #08a0e9;
+    transition: all 0.5s;
+}
+
+.btn-instragram {
+    color: deeppink;
+    transition: all 0.5s;
+}
+
+.btn-telegram {
+    color: #0088cc;
+    transition: all 0.5s;
+}
+
+.btn-facebook:hover {
+    background-color: blue;
     color: aliceblue;
-    background-color: darkcyan !important;
-    border: 1px solid darkcyan !important;
+    border: 1px solid blue;
+}
+
+.btn-twitter:hover {
+    color: aliceblue;
+    background-color: #08a0e9;
+    border: 1px solid #08a0e9;
+}
+
+.btn-instragram:hover {
+    color: aliceblue;
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border: 1px solid radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+
+.btn-telegram:hover {
+    color: aliceblue;
+    background-color: #0088cc;
+    border: 1px solid #0088cc;
 }
 
 .personal-card {
