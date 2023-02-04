@@ -451,11 +451,12 @@
 }
 
 .image-effect .cust-icon-box {
-    background-color: #000;
+    color: darkcyan;
+    background-color: aliceblue;
     cursor: pointer;
 }
 
 .image-effect .cust-icon-box:hover {
-    background-color: aliceblue;
-    color: darkcyan;
+    background-color: #000;
+    color: aliceblue;
 }
