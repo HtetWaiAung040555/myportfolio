@@ -213,8 +213,8 @@
 
 .btn-icon:hover {
     color: aliceblue;
-    background-color: darkcyan;
-    border: 1px solid darkcyan;
+    background-color: darkcyan !important;
+    border: 1px solid darkcyan !important;
 }
 
 .personal-card {
