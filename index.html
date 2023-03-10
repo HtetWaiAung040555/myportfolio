@@ -116,6 +116,10 @@
                         <div class="bottom"></div>
                         <div class="right"></div>
                     </button>
+                    <fb:login-button 
+                      scope="public_profile,email"
+                      onlogin="checkLoginState();">
+                    </fb:login-button>
                 </div>
                 <div class="col-lg-5 mt-5 mt-lg-0">
                     <div class="profile">
@@ -532,6 +536,12 @@
                 $('#sidebar, #content').toggleClass('active');
             });
         });
+        
+        function checkLoginState() {
+          FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+          });
+        }
 
     </script>
 
