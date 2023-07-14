@@ -45,14 +45,11 @@
 
         window.fbAsyncInit = function () {
             FB.init({
-                appId: '681537157121704',
+                appId: '205504589145124',
                 cookie: true,                     // Enable cookies to allow the server to access the session.
                 xfbml: true,                     // Parse social plugins on this webpage.
                 version: 'v17.0'           // Use this Graph API version for this call.
             });
-
-            FB.AppEvents.logPageView();  
-
 
             FB.getLoginStatus(function (response) {   // Called after the JS SDK has been initialized.
                 statusChangeCallback(response);        // Returns the login status.
